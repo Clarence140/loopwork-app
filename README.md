@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# LoopWork Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mobile version ng LoopWork - Professional work management platform
 
-## Get started
+## 🎨 Features Implemented
 
-1. Install dependencies
+### ✅ Completed Screens
 
-   ```bash
-   npm install
-   ```
+1. **Loading Screen** - Animated splash screen with LoopWork branding
+2. **Login Screen** - Beautiful gradient background matching web version
+3. **Dashboard** - Modern grid layout with all application modules
 
-2. Start the app
+## 🎨 Design System
 
-   ```bash
-   npx expo start
-   ```
+### Color Palette (From LoopWork Web)
 
-In the output, you'll find options to open the app in a
+- **Primary Blue**: `#1E3A8A`
+- **Accent Blue**: `#3B82F6`
+- **Purple**: `#8B5CF6`
+- **Indigo**: `#6366F1`
+- **Dark Blue**: `#1E40AF`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **React Native** with Expo
+- **NativeWind** - Tailwind CSS for React Native
+- **React Native Reanimated** - Smooth animations
+- **Expo Router** - File-based navigation
+- **React Native Gesture Handler** - Touch interactions
+- **Expo Linear Gradient** - Beautiful gradients
+- **Expo Vector Icons** - Ionicons
 
-## Get a fresh project
+## 🚀 Running the App
 
-When you're ready, run:
+### Prerequisites
+
+- Node.js installed
+- Expo Go app on your phone (iOS/Android)
+
+### Installation
 
 ```bash
-npm run reset-project
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+# Or run on specific platform
+npm run android  # For Android
+npm run ios      # For iOS
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Testing
 
-## Learn more
+1. Run `npm start`
+2. Scan QR code with Expo Go app (Android) or Camera app (iOS)
+3. App will open with loading screen → login screen → dashboard
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📱 Screen Flow
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+Index (redirect) → Loading Screen (3s) → Login Screen → Dashboard
+```
 
-## Join the community
+## 🎯 Application Modules
 
-Join our community of developers creating universal apps.
+The dashboard includes all LoopWork modules:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- 📝 To-Do List
+- 👥 Address Book
+- 📁 Cabinet
+- 📄 Circulation Report
+- 📊 Dashboard
+- 💬 Discussion
+- 📂 Documents
+- 🏢 Facility Reservation
+- ℹ️ Information
+- 📝 Minutes
+- 📓 Notepad
+- 🎯 Project Management
+- 📅 Schedule
+- ⏰ Timecard
+- 👤 User Directory
+- 🚶 Visitor Management
+
+## 🔄 Next Steps
+
+Future enhancements:
+
+- Implement Firebase authentication
+- Connect to Firestore database
+- Build individual module screens
+- Add push notifications
+- Implement offline mode
+- Add biometric authentication
+
+## 📝 Notes
+
+- UI aligned with LoopWork web version
+- Modern, professional design
+- Smooth animations and transitions
+- Responsive layout for all screen sizes
+
+---
+
+**Built by**: Inspire Group  
+**Version**: 1.0.0
