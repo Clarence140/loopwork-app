@@ -6,14 +6,19 @@
  * Main route for the Circulation application
  */
 
+import AppHeader from "@/components/app-header";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function CirculationScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Circulation</Text>
-      {/* Circulation UI will go here */}
+      <AppHeader title="Circulation Report" subtitle="Document circulation" />
+      <View style={styles.content}>
+        <Text style={styles.placeholder}>
+          Circulation Report UI coming soon...
+        </Text>
+      </View>
     </View>
   );
 }
@@ -21,12 +26,15 @@ export default function CirculationScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    padding: 20,
+    backgroundColor: "#F3F4F6",
   },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
+  content: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  placeholder: {
+    fontSize: 16,
+    color: "#9CA3AF",
   },
 });

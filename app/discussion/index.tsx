@@ -6,18 +6,33 @@
  * Main route for the Discussion/Forum application
  */
 
+import AppHeader from "@/components/app-header";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function DiscussionScreen() {
   return (
-    <View style={styles.container}>{/* Discussion UI will go here */}</View>
+    <View style={styles.container}>
+      <AppHeader title="Discussion" subtitle="Team conversations" />
+      <View style={styles.content}>
+        <Text style={styles.placeholder}>Discussion UI coming soon...</Text>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#F3F4F6",
+  },
+  content: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  placeholder: {
+    fontSize: 16,
+    color: "#9CA3AF",
   },
 });
