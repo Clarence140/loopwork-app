@@ -1,108 +1,81 @@
 # LoopWork Mobile App
 
-Mobile version ng LoopWork - Professional work management platform
+A comprehensive enterprise groupware mobile application built with React Native and Expo.
 
-## 🎨 Features Implemented
+## 📱 Features
 
-### ✅ Completed Screens
+- **Todo List** - Task management with priorities and deadlines
+- **Circulation Report** - Document circulation and approval workflow
+- **Schedule** - Calendar and event management
+- **Timecard** - Time tracking and attendance
+- **Address Book** - Contact management
+- **Discussion** - Team communication and forums
+- And many more enterprise features...
 
-1. **Loading Screen** - Animated splash screen with LoopWork branding
-2. **Login Screen** - Beautiful gradient background matching web version
-3. **Dashboard** - Modern grid layout with all application modules
+## 📁 Project Structure
 
-## 🎨 Design System
+This project follows a **strict folder structure** for better organization and collaboration.
 
-### Color Palette (From LoopWork Web)
+See [FOLDER_STRUCTURE.md](./FOLDER_STRUCTURE.md) for detailed guidelines.
 
-- **Primary Blue**: `#1E3A8A`
-- **Accent Blue**: `#3B82F6`
-- **Purple**: `#8B5CF6`
-- **Indigo**: `#6366F1`
-- **Dark Blue**: `#1E40AF`
+### Quick Overview:
 
-### Tech Stack
+```
+app/
+  └── [application-name]/
+      ├── index.tsx          # Main screen
+      ├── components/        # UI components (.tsx)
+      ├── services/          # Business logic (.ts)
+      └── types.ts          # Type definitions
+```
 
-- **React Native** with Expo
-- **NativeWind** - Tailwind CSS for React Native
-- **React Native Reanimated** - Smooth animations
-- **Expo Router** - File-based navigation
-- **React Native Gesture Handler** - Touch interactions
-- **Expo Linear Gradient** - Beautiful gradients
-- **Expo Vector Icons** - Ionicons
-
-## 🚀 Running the App
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js installed
-- Expo Go app on your phone (iOS/Android)
+- Node.js (v18 or higher)
+- npm or yarn
+- Expo CLI
 
 ### Installation
 
-```bash
-# Install dependencies
-npm install
+1. Clone the repository
+2. Install dependencies:
 
-# Start the development server
-npm start
+   ```bash
+   npm install
+   ```
 
-# Or run on specific platform
-npm run android  # For Android
-npm run ios      # For iOS
-```
+3. Start the development server:
 
-### Testing
+   ```bash
+   npm start
+   ```
 
-1. Run `npm start`
-2. Scan QR code with Expo Go app (Android) or Camera app (iOS)
-3. App will open with loading screen → login screen → dashboard
+4. Run on your device or simulator:
+   - Press `i` for iOS
+   - Press `a` for Android
+   - Scan QR code with Expo Go app
 
-## 📱 Screen Flow
+## 🛠️ Tech Stack
 
-```
-Index (redirect) → Loading Screen (3s) → Login Screen → Dashboard
-```
+- **React Native** - Mobile framework
+- **Expo** - Development platform
+- **TypeScript** - Type safety
+- **Firebase** - Backend (Firestore, Auth, Storage)
+- **NativeWind** - Styling (Tailwind for React Native)
 
-## 🎯 Application Modules
+## 📖 Documentation
 
-The dashboard includes all LoopWork modules:
+- [Folder Structure Guidelines](./FOLDER_STRUCTURE.md)
+- [Project Summary](./PROJECT_SUMMARY.md)
 
-- 📝 To-Do List
-- 👥 Address Book
-- 📁 Cabinet
-- 📄 Circulation Report
-- 📊 Dashboard
-- 💬 Discussion
-- 📂 Documents
-- 🏢 Facility Reservation
-- ℹ️ Information
-- 📝 Minutes
-- 📓 Notepad
-- 🎯 Project Management
-- 📅 Schedule
-- ⏰ Timecard
-- 👤 User Directory
-- 🚶 Visitor Management
+## 🤝 Contributing
 
-## 🔄 Next Steps
+Please follow the folder structure guidelines when adding new features or applications.
 
-Future enhancements:
+See [FOLDER_STRUCTURE.md](./FOLDER_STRUCTURE.md) for details.
 
-- Implement Firebase authentication
-- Connect to Firestore database
-- Build individual module screens
-- Add push notifications
-- Implement offline mode
-- Add biometric authentication
+## 📄 License
 
-## 📝 Notes
-
-- UI aligned with LoopWork web version
-- Modern, professional design
-- Smooth animations and transitions
-- Responsive layout for all screen sizes
-
----
-
-**Built by**: Inspire Group  
-**Version**: 1.0.0
+Private project - All rights reserved.
