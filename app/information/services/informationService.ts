@@ -1,30 +1,49 @@
 /**
  * ========================================
- * INFORMATION SERVICE
+ * INFORMATION - FIREBASE SERVICE
  * ========================================
  *
- * Handles all operations for information board
+ * Placeholder for Firebase operations
  */
 
-export const getInformation = async (companyCode: string) => {
-  // Implementation will go here
-  return [];
-};
+import { InformationPost } from "../types";
 
-export const createInformation = async (companyCode: string, infoData: any) => {
-  // Implementation will go here
-  return "";
-};
-
-export const getCategories = async (companyCode: string) => {
-  // Implementation will go here
-  return [];
-};
-
-export const createCategory = async (
+export const getPosts = async (
   companyCode: string,
-  categoryData: any
-) => {
-  // Implementation will go here
-  return "";
+  userId: string
+): Promise<InformationPost[]> => {
+  console.log("📢 [informationService] getPosts - placeholder");
+  return [];
+};
+
+export const addPost = async (
+  companyCode: string,
+  userId: string,
+  postData: any
+): Promise<string> => {
+  console.log("📢 [informationService] addPost - placeholder");
+  return "post_" + Date.now();
+};
+
+export const updatePost = async (
+  companyCode: string,
+  postId: string,
+  postData: Partial<any>
+): Promise<void> => {
+  console.log("📢 [informationService] updatePost - placeholder");
+};
+
+export const deletePost = async (
+  companyCode: string,
+  postId: string
+): Promise<void> => {
+  console.log("📢 [informationService] deletePost - placeholder");
+};
+
+export const markAsRead = async (
+  companyCode: string,
+  postId: string,
+  userId: string
+): Promise<void> => {
+  console.log("📢 [informationService] markAsRead - placeholder");
 };
